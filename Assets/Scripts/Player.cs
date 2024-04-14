@@ -39,7 +39,7 @@ public class Player : MonoBehaviour
 
     private void Death()
     {
-        SceneManager.LoadScene("game");
+        SceneManager.LoadScene("Jam Level");
     }
 
     private void HpRecovery()

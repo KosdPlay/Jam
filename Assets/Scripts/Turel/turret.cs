@@ -29,12 +29,10 @@ public class turret : MonoBehaviour
                 if (player.transform.position.x < transform.position.x)
                 {
                     Instantiate(bullet, transform.position, Quaternion.Euler(0f, 0f, 0f));
-                    GetComponent<SpriteRenderer>().flipX = true;
                 }
                 else
                 {
                     Instantiate(bullet, transform.position, Quaternion.Euler(0f, 0f, 180f));
-                    GetComponent<SpriteRenderer>().flipX = false;
                 }
                 yield return new WaitForSeconds(fire_rate);
             }
